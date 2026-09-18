@@ -525,7 +525,7 @@ to{box-shadow:0 0 26px 8px rgba(255,210,74,1),inset 0 0 24px rgba(255,210,74,.7)
 .meter{flex:1;text-align:center;padding:7px 4px;border-radius:12px;
 background:linear-gradient(180deg,#2a1163,#1a0a40);border:1.5px solid rgba(255,210,74,.5)}
 .meter .lab{font-size:10px;font-weight:700;letter-spacing:.5px;color:#c9a7ff;text-transform:uppercase}
-.meter .val{font-size:19px;font-weight:900;color:var(--gold);margin-top:1px;text-shadow:0 1px 2px rgba(0,0,0,.5)}
+.meter .val{font-size:13px;font-weight:900;color:var(--gold);margin-top:1px;text-shadow:0 1px 2px rgba(0,0,0,.5)}
 .spinWrap{position:absolute;top:510px;left:0;width:100%;text-align:center;z-index:7}
 .spinBtn{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:8px;
 width:210px;height:68px;border:none;border-radius:999px;cursor:pointer;
@@ -587,7 +587,7 @@ filter:blur(12px);animation:aurapulse 2.6s ease-in-out infinite}
 background:linear-gradient(180deg,#fff7cf,var(--gold) 50%,var(--gold2));-webkit-background-clip:text;background-clip:text;color:transparent;
 filter:drop-shadow(0 4px 8px rgba(0,0,0,.5))}
 .final h2{margin-top:4px}
-.winAmtBig{font-size:36px;font-weight:900;line-height:1;margin:6px 0 2px;letter-spacing:1px;
+.winAmtBig{font-size:28px;font-weight:900;line-height:1;margin:6px 0 2px;letter-spacing:1px;
 background:linear-gradient(100deg,#ffe680 0%,#ffffff 18%,#ffd24a 38%,#fff6c8 52%,#f6a912 72%,#ffffff 88%,#ffd24a 100%);
 background-size:250% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;
 filter:drop-shadow(0 4px 10px rgba(0,0,0,.5)) drop-shadow(0 0 16px rgba(255,210,74,.65));
@@ -635,9 +635,9 @@ text-decoration:none;display:inline-flex;align-items:center;letter-spacing:.3px}
 <div class="reels" id="reels"><div class="grid"></div><div class="winline" id="winline"></div></div>
 </div>
 <div class="meters">
-<div class="meter"><div class="lab">Saldo</div><div class="val" id="mBal">$ 1.200.000</div></div>
-<div class="meter"><div class="lab">Apuesta</div><div class="val">$ 60.000</div></div>
-<div class="meter"><div class="lab">Ganancia</div><div class="val" id="mWin">$0</div></div>
+<div class="meter"><div class="lab">Saldo</div><div class="val" id="mBal">ARS 1.200.000</div></div>
+<div class="meter"><div class="lab">Apuesta</div><div class="val">ARS 60.000</div></div>
+<div class="meter"><div class="lab">Ganancia</div><div class="val" id="mWin">ARS 0</div></div>
 </div>
 <div class="spinWrap">
 <button class="spinBtn pulse" id="spinBtn">
@@ -649,7 +649,7 @@ text-decoration:none;display:inline-flex;align-items:center;letter-spacing:.3px}
 <div class="coins" id="coins"></div>
 <div class="winban" id="winban">
 <div class="t1">¡GRAN PREMIO!</div>
-<div class="t2" id="winAmt">$ 6.000.000</div>
+<div class="t2" id="winAmt">ARS 6.000.000</div>
 <div class="t3">5 JOKERS — ¡LÍNEA MÁXIMA!</div>
 </div>
 <a class="miniCta" id="miniCta" href="#">DESCARGAR</a>
@@ -659,7 +659,7 @@ text-decoration:none;display:inline-flex;align-items:center;letter-spacing:.3px}
 <div class="confetti" id="confetti"></div>
 <img class="jok" id="finalJok" alt="">
 <h2>PAQUETE DE BIENVENIDA</h2>
-<div class="winAmtBig">$ 6.000.000</div>
+<div class="winAmtBig">ARS 6.000.000</div>
 <div class="finalBonus"><span>550% EN DEPÓSITOS<br>+330 GIROS GRATIS</span></div>
 <a class="cta" id="ctaBtn" href="#">
 <svg viewBox="0 0 24 24"><path d="M20 8h-2.3a3 3 0 10-5.7-1.9A3 3 0 006.3 8H4a1 1 0 00-1 1v3h9V8h0v4h9V9a1 1 0 00-1-1zM10.5 8H9a1 1 0 110-2c.9 0 1.2 1.2 1.5 2zm4.5 0h-1.5c.3-.8.6-2 1.5-2a1 1 0 110 2zM4 13v6a2 2 0 002 2h5v-8H4zm9 8h5a2 2 0 002-2v-6h-7v8z"/></svg>INSTALAR
@@ -762,7 +762,7 @@ hintEl.innerHTML="¡CASI! <b>¡gira otra vez!</b>"; step=1; busy=false;
 spinBtn.disabled=false; spinBtn.classList.add("pulse"); setMascot("host"); setTimeout(positionHand,200);
 } else {
 winlineEl.classList.add("on"); markWin(); setMascot("win"); sfxWin();
-setTimeout(function(){ mWin.textContent="$ 6.000.000"; winban.classList.add("on"); burst(28); },350);
+setTimeout(function(){ mWin.textContent="ARS 6.000.000"; winban.classList.add("on"); burst(28); },350);
 setTimeout(showFinal,2300);
 }
 }
